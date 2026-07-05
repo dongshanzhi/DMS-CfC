@@ -43,13 +43,9 @@
 - **[🎯 Research Motivation](#-research-motivation)** - Problem and challenges
 - **[🏗️ Methodology](#%EF%B8%8F-methodology)** - STMN-EQA framework
   - [Transfer Learning Strategy](#transfer-learning-strategy)
-  - [SVMD Frequency Decomposition](#1-svmd-frequency-decomposition)
-  - [TimesNet Temporal Modeling](#2-timesnet-temporal-modeling)
-  - [GNN Spatial Correlation](#3-gnn-spatial-correlation)
+  - [VMD Frequency Decomposition](#1-svmd-frequency-decomposition)
   - [Statistical Analysis](#4-statistical-analysis)
 - **[📊 Experimental Results](#-experimental-results)** - Two earthquake case studies
-  - [2022 Ms 6.8 Luding Earthquake](#2022-ms-68-luding-earthquake)
-  - [2019 Ms 6.0 Changning Earthquake](#2019-ms-60-changning-earthquake)
   - [Performance Comparison](#performance-comparison)
   - [Ablation Studies](#ablation-studies)
 - **[💻 Code (Coming Soon)](#-code-coming-soon)** - Implementation details
