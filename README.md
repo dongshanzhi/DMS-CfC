@@ -204,3 +204,40 @@ We acknowledge the borehole strain data support from:
 - **National Institute of Natural Hazards, MEMC**
 
 ---
+
+## 📧 Contact
+
+For questions related to this project, please contact the corresponding authors.
+
+### Corresponding Authors
+
+**Chengquan Chi, Ph.D.**  
+Associate Professor  
+School of Artificial Intelligence  
+Hainan Normal University  
+Haikou, China  
+📧 Email: chicq@hainnu.edu.cn  
+
+**Zining Yu, Ph.D.**  
+Associate Professor  
+College of Electronic Engineering  
+Ocean University of China  
+Qingdao, China  
+📧 Email: yuzining@ouc.edu.cn  
+
+### Equal-Contribution Authors
+
+**Minhao Sun**  
+School of Artificial Intelligence  
+Hainan Normal University  
+Haikou, China  
+📧 Email: 18736289535@163.com  
+
+**Shanzhi Dong**  
+College of Electronic Engineering  
+Ocean University of China  
+Qingdao, China  
+📧 Email: dongshanzhi204730@gmail.com  
+
+---
+
