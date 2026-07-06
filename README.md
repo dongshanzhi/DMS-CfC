@@ -58,6 +58,64 @@
 
 </details>
 
+---
+
+## 💻 Code (Coming Soon)
+
+### 🚧 Repository Under Construction
+
+**Planned Structure**:
+```
+DMS-CfC/
+├── README.md                              # Project overview and usage guide
+├── requirements.txt                       # Python dependencies
+├── LICENSE                                # License file
+├── .gitignore                             # Ignore data, checkpoints, logs, local configs
+│
+├── configs/
+│   ├── preprocess.yaml            # Example config for Swarm data preprocessing
+│   ├── train.yaml                 # Example config for background-model training
+│   ├── inference.yaml             # Example config for track-level prediction
+│   ├── anomaly.yaml               # Example config for residual anomaly extraction
+│   └── control_region.yaml        # Example config for low-seismic-activity control analysis
+│
+├── data/
+│   ├── __init__.py
+│   ├── orbit_split.py                 # Time correction, local time calculation, orbit segmentation
+│   ├── geomagnetic_coordinates.py     # Mlat / MLT calculation and geomagnetic latitude filtering
+│   ├── gap_filling.py                 # Missing/zero-value filling for magnetic-field sequences
+│   ├── chaos_residual.py              # CHAOS-based core/lithospheric field removal
+│   ├── vmd_decomposition.py           # VMD decomposition and target-band reconstruction
+│   ├── region_filter.py               # Spatial filtering for study/control regions
+│   └── dataset.py                     # Time-series dataset construction for model training
+│
+│   ├── models/
+│   ├── __init__.py
+│   │   └── baselines.py                   # Optional baseline models
+│
+│   ├── analysis/
+│   │   ├── __init__.py
+│   │   ├── residual_detection.py          # Residual-based anomaly identification
+│   │   ├── cumulative_analysis.py         # Cumulative anomaly trajectory analysis
+│   │   ├── space_weather.py               # Geomagnetic/solar activity screening
+│   │   └── control_region.py              # Low-seismic-activity control experiments
+│   │
+│   └── utils/
+│       ├── __init__.py
+│       ├── io.py                          # File loading/saving utilities
+│       ├── metrics.py                     # RE, CR, AUC and other evaluation metrics
+│       ├── plotting.py                    # Visualization utilities
+│       └── seed.py                        # Reproducibility settings
+│
+│
+├── checkpoints/
+│   └── .gitkeep                           # Model checkpoint placeholder, ignored by Git
+│
+├── results/
+   ├── figures/.gitkeep                   # Generated figures, ignored by Git
+   ├── tables/.gitkeep                    # Generated tables, ignored by Git
+
+
 ### 🙏 Acknowledgment
 
 ### Funding Support
