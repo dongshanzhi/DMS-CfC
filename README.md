@@ -60,6 +60,51 @@
 
 ---
 
+## 📌 Highlights
+
+### Key Innovations
+
+```
+Coming Soon
+```
+
+### Performance Highlights
+
+```
+Coming Soon
+```
+
+---
+
+## 🔬 Abstract
+
+
+```
+Coming Soon
+```
+
+---
+
+## 🎯 Research Motivation
+
+```
+Coming Soon
+```
+
+---
+
+## 🏗️ Methodology
+
+```
+Coming Soon
+```
+---
+
+## 📊 Experimental Results
+```
+Coming Soon
+```
+---
 ## 💻 Code (Coming Soon)
 
 ### 🚧 Repository Under Construction
@@ -86,19 +131,19 @@ DMS-CfC/
 │   ├── gap_filling.py                     # Missing-value and zero-value filling
 │   ├── chaos_residual.py                  # CHAOS-based background-field removal
 │   ├── vmd_decomposition.py               # VMD decomposition and target-band reconstruction
-│   ├── region_filter.py                   # Spatial filtering for study/control regions
+│   ├── region_filter.py                   # Spatial filtering for study/Low_seismic_activity regions
 │   └── dataset.py                         # Time-series dataset construction
 │
 ├── models/
 │   ├── __init__.py
-│   └── dms_cfc.py                       # Optional baseline models
+│   └── dms_cfc.py                       # DMS-CfC model
 │
 ├── analysis/
 │   ├── __init__.py
 │   ├── residual_detection.py              # Residual-based anomaly identification
 │   ├── cumulative_analysis.py             # Cumulative anomaly trajectory analysis
 │   ├── space_weather.py                   # Geomagnetic and solar activity screening
-│   └── control_region.py                  # Low-seismic-activity control experiments
+│   └── Low_seismic_activity_region.py     # Low-seismic-activity control experiments
 │
 ├── utils/
 │   ├── __init__.py
