@@ -79,7 +79,7 @@ DMS-CfC/
 │   ├── anomaly.yaml               # Example config for residual anomaly extraction
 │   └── control_region.yaml        # Example config for low-seismic-activity control analysis
 │
-├── data/
+├── data_preprocessing/
 │   ├── __init__.py
 │   ├── orbit_split.py                 # Time correction, local time calculation, orbit segmentation
 │   ├── geomagnetic_coordinates.py     # Mlat / MLT calculation and geomagnetic latitude filtering
@@ -88,32 +88,34 @@ DMS-CfC/
 │   ├── vmd_decomposition.py           # VMD decomposition and target-band reconstruction
 │   ├── region_filter.py               # Spatial filtering for study/control regions
 │   └── dataset.py                     # Time-series dataset construction for model training
+│── data/
+│   ├── raw/.gitkeep                       # Raw data placeholder, ignored by Git
+│   ├── processed/.gitkeep                 # Processed data placeholder, ignored by Git
 │
-│   ├── models/
+├── models/
 │   ├── __init__.py
-│   │   └── baselines.py                   # Optional baseline models
+│   └── DMS-CfC.py                   # Optional baseline models
 │
-│   ├── analysis/
-│   │   ├── __init__.py
-│   │   ├── residual_detection.py          # Residual-based anomaly identification
-│   │   ├── cumulative_analysis.py         # Cumulative anomaly trajectory analysis
-│   │   ├── space_weather.py               # Geomagnetic/solar activity screening
-│   │   └── control_region.py              # Low-seismic-activity control experiments
-│   │
-│   └── utils/
-│       ├── __init__.py
-│       ├── io.py                          # File loading/saving utilities
-│       ├── metrics.py                     # RE, CR, AUC and other evaluation metrics
-│       ├── plotting.py                    # Visualization utilities
-│       └── seed.py                        # Reproducibility settings
-│
+├── utils/
+│    ├── __init__.py
+│    ├── io.py                          # File loading/saving utilities
+│    ├── metrics.py                     # RE, CR, AUC and other evaluation metrics
+│    ├── plotting.py                    # Visualization utilities
+│    └── seed.py                        # Reproducibility settings
 │
 ├── checkpoints/
-│   └── .gitkeep                           # Model checkpoint placeholder, ignored by Git
+│   └── best.pth                         # the best Model checkpoint
 │
 ├── results/
-   ├── figures/.gitkeep                   # Generated figures, ignored by Git
-   ├── tables/.gitkeep                    # Generated tables, ignored by Git
+│   ├── true.npy                   # true 
+│   └── pred.py                    # predication 
+
+├── analysis/
+│   ├── __init__.py
+│   ├── residual_detection.py          # Residual-based anomaly identification
+│   ├── cumulative_analysis.py         # Cumulative anomaly trajectory analysis
+│   ├── space_weather.py               # Geomagnetic/solar activity screening
+│   └── control_region.py              # Low-seismic-activity control experiments
 
 ```
 
