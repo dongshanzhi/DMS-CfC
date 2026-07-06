@@ -96,7 +96,17 @@ Coming Soon
 ## 🏗️ Methodology
 
 ```
-Coming Soon
+
+1. **Signal Preprocessing and VMD Reconstruction**  
+   Magnetic field observation data from a constellation of satellites were organized and preprocessed to reduce background noise, followed by signal decomposition using VMD to facilitate subsequent anomaly analysis.
+
+2. **DMS-CfC Network**  
+   A decoupled multi-scale closed-form continuous-time network is adopted to model nonstationary satellite magnetic-field sequences and enhance the separation between background evolution and transient variations.
+
+3. **Residual-Based Anomaly Analysis**  
+   Prediction residuals are used to identify potential anomalous variations.
+
+More implementation details will be released after publication.
 ```
 ---
 
@@ -162,14 +172,14 @@ DMS-CfC/
 ├── data/
 │   ├── README.md                          # Data preparation instructions
 │   ├── raw/
-│   │   └── .gitkeep                       # Raw data placeholder, ignored by Git
+│   │   └── .gitkeep                       # Raw data placeholder
 │   ├── processed/
-│   │   └── .gitkeep                       # Processed data placeholder, ignored by Git
+│   │   └── .gitkeep                       # Processed data placeholder
 │   └── external/
 │       └── .gitkeep                       # External indices/catalogs placeholder
 │
 ├── checkpoints/
-│   └── .gitkeep                           # Model checkpoints placeholder, ignored by Git
+│   └── .gitkeep                           # Model checkpoints placeholder
 │
 └── results/
 │   └── predictions/
