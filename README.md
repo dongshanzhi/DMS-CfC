@@ -53,8 +53,30 @@
   - [Space-Weather Screening](#space-weather-screening)
   - [Multi-Geosphere Comparison](#multi-geosphere-comparison)
 - **[💻 Code](#-code)** - Coming Soon
-- **[📚 Citation](#-citation)** - BibTeX entry
-- **[🙏 Acknowledgments](#-acknowledgments)** - Data and funding support
+- **[🙏 Acknowledgment](#-acknowledgment)** - Data and funding support
 - **[📧 Contact](#-contact)** - Contact information
 
 </details>
+
+### 🙏 Acknowledgment
+
+### Funding Support
+
+This work was supported by:
+- **Education Department of Hainan Province** (Project No. Hnky2026ZD-4)
+
+### Data Support
+
+We acknowledge the borehole strain data support from:
+- **China Earthquake Networks Center**
+- **National Earthquake Data Center**
+- **National Institute of Natural Hazards, MEMC**
+
+### Technical Acknowledgments
+
+We thank the authors of the following works for open-sourcing their implementations:
+- [TimesNet](https://github.com/thuml/Time-Series-Library) - Multi-periodic temporal modeling
+- [PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric) - Graph neural networks
+- [VMD-Python](https://github.com/vrcarva/vmdpy) - Variational mode decomposition
+
+---
