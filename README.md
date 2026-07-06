@@ -64,38 +64,34 @@
 
 ### Key Innovations
 
-```
 Coming Soon
-```
 
 ### Performance Highlights
 
-```
 Coming Soon
-```
 
 ---
 
 ## 🔬 Abstract
 
-
-```
 Coming Soon
-```
 
 ---
 
 ## 🎯 Research Motivation
 
-```
-Coming Soon
-```
+Pre-earthquake ionospheric magnetic anomalies are usually weak, transient, and easily masked by complex geomagnetic background variations and space-weather disturbances. Traditional time-series models may overfit local abnormal fluctuations, which reduces the residual space needed for anomaly identification.
+
+This project aims to address the following challenges:
+
+- How to construct a stable geomagnetic background representation from nonstationary satellite observations.
+- How to reduce the influence of transient disturbances during background modeling.
+- How to use prediction residuals to support interpretable anomaly extraction.
+- How to evaluate possible ionospheric responses under complex satellite observation conditions.
 
 ---
 
 ## 🏗️ Methodology
-
-```
 
 1. **Signal Preprocessing and VMD Reconstruction**  
    Magnetic field observation data from a constellation of satellites were organized and preprocessed to reduce background noise, followed by signal decomposition using VMD to facilitate subsequent anomaly analysis.
@@ -107,13 +103,13 @@ Coming Soon
    Prediction residuals are used to identify potential anomalous variations.
 
 More implementation details will be released after publication.
-```
+
 ---
 
 ## 📊 Experimental Results
-```
+
 Coming Soon
-```
+
 ---
 ## 💻 Code (Coming Soon)
 
