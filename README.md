@@ -26,31 +26,35 @@
 - **Background-oriented anomaly detection.**  
   The model learns a stable geomagnetic background representation and highlights abnormal residual variations instead of directly fitting all observed fluctuations.
 
-- **Decoupled continuous-time modeling.**  
+- **Decoupled Multi-Scale Closed-form Continuous-Time Network.**  
   A decoupled multi-scale continuous-time network is introduced to improve the separation between background evolution and transient disturbances.
 
 - **Case-based validation.**  
   The framework is evaluated on representative strong-earthquake events to analyze the temporal evolution of possible ionospheric precursor anomalies.
 <div>
 
+
 ## 📑 Table of Contents
 
 <details open>
 <summary><b>Click to expand/collapse navigation</b></summary>
 
-- **[📌 Highlights](#-highlights)** - Key contributions and novelty
+- **[📌 Highlights](#-highlights)** - Main features and research contributions
 - **[🔬 Abstract](#-abstract)** - Research overview
-- **[🎯 Research Motivation](#-research-motivation)** - Problem and challenges
-- **[🏗️ Methodology](#%EF%B8%8F-methodology)** - STMN-EQA framework
-  - [Transfer Learning Strategy](#transfer-learning-strategy)
-  - [VMD Frequency Decomposition](#1-svmd-frequency-decomposition)
-  - [Statistical Analysis](#4-statistical-analysis)
-- **[📊 Experimental Results](#-experimental-results)** - Two earthquake case studies
-  - [Performance Comparison](#performance-comparison)
-  - [Ablation Studies](#ablation-studies)
-- **[💻 Code (Coming Soon)](#-code-coming-soon)** - Implementation details
+- **[🎯 Research Motivation](#-research-motivation)** - Background and challenges
+- **[🏗️ Methodology](#%EF%B8%8F-methodology)** - DMS-CfC framework
+  - [Satellite Magnetic Data Processing](#satellite-magnetic-data-processing)
+  - [Background-Oriented Modeling](#background-oriented-modeling)
+  - [DMS-CfC Temporal Network](#dms-cfc-temporal-network)
+  - [Residual-Based Anomaly Extraction](#residual-based-anomaly-extraction)
+- **[📊 Experimental Analysis](#-experimental-analysis)** - Case-based validation
+  - [Prediction Performance](#prediction-performance)
+  - [Anomaly Extraction Results](#anomaly-extraction-results)
+  - [Space-Weather Screening](#space-weather-screening)
+  - [Multi-Geosphere Comparison](#multi-geosphere-comparison)
+- **[💻 Code](#-code)** - Coming Soon
 - **[📚 Citation](#-citation)** - BibTeX entry
-- **[🙏 Acknowledgments](#-acknowledgments)** - Funding and data support
-- **[📧 Contact](#-contact)** - Get in touch
+- **[🙏 Acknowledgments](#-acknowledgments)** - Data and funding support
+- **[📧 Contact](#-contact)** - Contact information
 
 </details>
