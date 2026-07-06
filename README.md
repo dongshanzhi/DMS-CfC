@@ -70,52 +70,69 @@ DMS-CfC/
 ├── README.md                              # Project overview and usage guide
 ├── requirements.txt                       # Python dependencies
 ├── LICENSE                                # License file
-├── .gitignore                             # Ignore data, checkpoints, logs, local configs
+├── .gitignore                             # Ignore data, checkpoints, logs, and local configs
 │
 ├── configs/
-│   ├── preprocess.yaml            # Example config for Swarm data preprocessing
-│   ├── train.yaml                 # Example config for background-model training
-│   ├── inference.yaml             # Example config for track-level prediction
-│   ├── anomaly.yaml               # Example config for residual anomaly extraction
-│   └── control_region.yaml        # Example config for low-seismic-activity control analysis
+│   ├── preprocess.example.yaml            # Example config for Swarm data preprocessing
+│   ├── train.example.yaml                 # Example config for background-model training
+│   ├── inference.example.yaml             # Example config for track-level prediction
+│   ├── anomaly.example.yaml               # Example config for residual anomaly extraction
+│   └── control_region.example.yaml        # Example config for control-region validation
 │
 ├── data_preprocessing/
 │   ├── __init__.py
-│   ├── orbit_split.py                 # Time correction, local time calculation, orbit segmentation
-│   ├── geomagnetic_coordinates.py     # Mlat / MLT calculation and geomagnetic latitude filtering
-│   ├── gap_filling.py                 # Missing/zero-value filling for magnetic-field sequences
-│   ├── chaos_residual.py              # CHAOS-based core/lithospheric field removal
-│   ├── vmd_decomposition.py           # VMD decomposition and target-band reconstruction
-│   ├── region_filter.py               # Spatial filtering for study/control regions
-│   └── dataset.py                     # Time-series dataset construction for model training
-│── data/
-│   ├── raw/.gitkeep                       # Raw data placeholder, ignored by Git
-│   ├── processed/.gitkeep                 # Processed data placeholder, ignored by Git
+│   ├── orbit_split.py                     # Time correction, local time calculation, and orbit segmentation
+│   ├── geomagnetic_coordinates.py         # Mlat/MLT calculation and geomagnetic-latitude filtering
+│   ├── gap_filling.py                     # Missing-value and zero-value filling
+│   ├── chaos_residual.py                  # CHAOS-based background-field removal
+│   ├── vmd_decomposition.py               # VMD decomposition and target-band reconstruction
+│   ├── region_filter.py                   # Spatial filtering for study/control regions
+│   └── dataset.py                         # Time-series dataset construction
 │
 ├── models/
 │   ├── __init__.py
-│   └── DMS-CfC.py                   # Optional baseline models
+│   └── dms_cfc.py                       # Optional baseline models
 │
-├── utils/
-│    ├── __init__.py
-│    ├── io.py                          # File loading/saving utilities
-│    ├── metrics.py                     # RE, CR, AUC and other evaluation metrics
-│    ├── plotting.py                    # Visualization utilities
-│    └── seed.py                        # Reproducibility settings
-│
-├── checkpoints/
-│   └── best.pth                         # the best Model checkpoint
-│
-├── results/
-│   ├── true.npy                   # true 
-│   └── pred.py                    # predication 
-
 ├── analysis/
 │   ├── __init__.py
-│   ├── residual_detection.py          # Residual-based anomaly identification
-│   ├── cumulative_analysis.py         # Cumulative anomaly trajectory analysis
-│   ├── space_weather.py               # Geomagnetic/solar activity screening
-│   └── control_region.py              # Low-seismic-activity control experiments
+│   ├── residual_detection.py              # Residual-based anomaly identification
+│   ├── cumulative_analysis.py             # Cumulative anomaly trajectory analysis
+│   ├── space_weather.py                   # Geomagnetic and solar activity screening
+│   └── control_region.py                  # Low-seismic-activity control experiments
+│
+├── utils/
+│   ├── __init__.py
+│   ├── io.py                              # File loading and saving utilities
+│   ├── metrics.py                         # RE, CR, AUC, and other evaluation metrics
+│   ├── plotting.py                        # Visualization utilities
+│   └── seed.py                            # Reproducibility settings
+│
+├── scripts/
+│   ├── preprocess_swarm.py                # Run Swarm preprocessing pipeline
+│   ├── inference.py                       # Predict satellite-track background signals
+│   ├── detect_anomalies.py                # Extract anomalous tracks from residuals
+│   ├── run_control_region.py              # Run control-region validation
+│   └── compare_baselines.py               # Optional baseline comparison
+│
+├── data/
+│   ├── README.md                          # Data preparation instructions
+│   ├── raw/
+│   │   └── .gitkeep                       # Raw data placeholder, ignored by Git
+│   ├── processed/
+│   │   └── .gitkeep                       # Processed data placeholder, ignored by Git
+│   └── external/
+│       └── .gitkeep                       # External indices/catalogs placeholder
+│
+├── checkpoints/
+│   └── .gitkeep                           # Model checkpoints placeholder, ignored by Git
+│
+└── results/
+│   └── predictions/
+│   │   └── .gitkeep                       # Prediction outputs placeholder
+│
+├── train.py                           # Train DMS-CfC model
+│
+└── pred.py                           # pred DMS-CfC model
 
 ```
 
@@ -134,12 +151,5 @@ We acknowledge the borehole strain data support from:
 - **China Earthquake Networks Center**
 - **National Earthquake Data Center**
 - **National Institute of Natural Hazards, MEMC**
-
-### Technical Acknowledgments
-
-We thank the authors of the following works for open-sourcing their implementations:
-- [TimesNet](https://github.com/thuml/Time-Series-Library) - Multi-periodic temporal modeling
-- [PyTorch Geometric](https://github.com/pyg-team/pytorch_geometric) - Graph neural networks
-- [VMD-Python](https://github.com/vrcarva/vmdpy) - Variational mode decomposition
 
 ---
