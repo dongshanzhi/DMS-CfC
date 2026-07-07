@@ -161,6 +161,8 @@ DMS-CfC/
 ├── scripts/
 │   ├── preprocess_swarm.py                # Run Swarm preprocessing pipeline
 │   ├── inference.py                       # Predict satellite-track background signals
+│   ├── train.py                           # Train DMS-CfC model
+│   ├── predict.py                         # Predict satellite-track background signals
 │   ├── detect_anomalies.py                # Extract anomalous tracks from residuals
 │   ├── run_control_region.py              # Run control-region validation
 │   └── compare_baselines.py               # Optional baseline comparison
@@ -178,12 +180,9 @@ DMS-CfC/
 │   └── .gitkeep                           # Model checkpoints placeholder
 │
 └── results/
-│   └── predictions/
-│   │   └── .gitkeep                       # Prediction outputs placeholder
-│
-├── train.py                           # Train DMS-CfC model
-│
-└── pred.py                           # pred DMS-CfC model
+    └── predictions/
+        └── .gitkeep                       # Prediction outputs placeholder
+
 
 ```
 
