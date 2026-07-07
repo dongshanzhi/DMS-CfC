@@ -187,6 +187,25 @@ DMS-CfC/
 
 ```
 
+### 📦 Expected Dependencies
+
+```txt
+# Deep Learning
+torch>=2.8.0     # tested with torch 2.8.0
+
+# Scientific Computing
+numpy>=1.23.5
+scipy>=1.13.1
+pandas>=2.2.2
+scikit-learn>=1.6.1
+
+# Signal Processing
+chaosmagpy>=0.15
+
+# Visualization
+matplotlib>=3.9.2
+seaborn>=0.12.2
+plotly>=5.24.1
 ---
 
 ### 🙏 Acknowledgment
@@ -240,4 +259,4 @@ Qingdao, China
 📧 Email: dongshanzhi204730@gmail.com  
 
 ---
-
+**We encourage researchers to build upon this work and extend it to other tectonic settings! 🌍**
