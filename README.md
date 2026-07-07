@@ -206,7 +206,9 @@ chaosmagpy>=0.15
 matplotlib>=3.9.2
 seaborn>=0.12.2
 plotly>=5.24.1
+```
 ---
+
 
 ### 🙏 Acknowledgment
 
